@@ -1,0 +1,10 @@
+version: '3'
+services:
+  golang-dev:
+    image: tensorflow/tensorflow:latest-py3
+    container_name: tf-dev
+    working_dir: /var/app
+    volumes:
+      - '.:/var/app'
+    stdin_open: true
+    tty: true
